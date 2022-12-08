@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math-magicians] <a name="about-project"></a>
+# 📖 [React-BookStore] <a name="about-project"></a>
 
 **[React-BookStore]** is a react web application for adding, removing and viewing books
 
