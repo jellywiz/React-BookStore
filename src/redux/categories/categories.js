@@ -1,5 +1,5 @@
 // actions
-const CHECK = '/src/redux/Categories/CHECK';
+const CHECK = 'Book-Check';
 
 // reducer
 export default function categoriesReducer(state = [], action) {

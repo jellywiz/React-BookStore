@@ -1,5 +1,5 @@
 function Catigoties() {
-  return <button type="button">Check Status</button>;
+  return <button type="submit">Check Status</button>;
 }
 
 export default Catigoties;
