@@ -1,5 +1,5 @@
 // actions
-const CHECK = 'Book-Check';
+const CHECK = 'React-BookStore/categories/Check';
 
 // reducer
 export default function categoriesReducer(state = [], action) {

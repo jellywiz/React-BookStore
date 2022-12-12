@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // Actions
-const ADD = 'Adding-Book';
-const REMOVE = 'Removing-Book';
+const ADD = 'React-BookStore/Books/Add';
+const REMOVE = 'React-BookStore/Books/Remove';
 const bookList = [
   { title: 'Book1', author: 'Author1', id: uuidv4() },
   {
