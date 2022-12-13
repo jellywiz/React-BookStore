@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 function AddFormBook() {
@@ -27,13 +27,7 @@ function AddFormBook() {
       <button
         type="button"
         onClick={() => {
-          dispatch(
-            addBook({
-              title,
-              author,
-              id: uuidv4(),
-            }),
-          );
+          dispatch(addBook({ title, author, id: uuidv4() }));
           setAuthor('');
           setTitle('');
         }}
