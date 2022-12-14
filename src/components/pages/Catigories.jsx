@@ -1,21 +1,16 @@
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { checkStatus } from '../../redux/categories/categories';
+import getCategories from '../../redux/categories/categories-api';
 
 function Catigoties() {
+  const books = useSelector((state) => state.category);
   const dispatch = useDispatch();
-  const Catigories = useSelector((state) => state.categories);
-  const handleClick = () => {
-    dispatch(checkStatus());
-  };
 
-  return (
-    <>
-      <button onClick={handleClick} type="submit">
-        Check Statues
-      </button>
-      <p>{Catigories}</p>
-    </>
-  );
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
+
+  return books.map((book) => <li key={book.item_id}>{book.category}</li>);
 }
 
 export default Catigoties;
