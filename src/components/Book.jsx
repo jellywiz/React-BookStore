@@ -1,29 +1,51 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { removeBook } from '../redux/books/Book-api';
 
-function Book({ title, author, id }) {
+function Book({ BOOK }) {
+  const {
+    title,
+    author,
+    // eslint-disable-next-line camelcase
+    item_id,
+    category,
+  } = BOOK;
   const dispatch = useDispatch();
   return (
-    <>
-      <span>
-        {title}
-        <span> by </span>
-        {author}
-      </span>
-      <button
-        type="button"
-        onClick={() => dispatch(removeBook({ title, author, id }))}
-      >
-        Remove
-      </button>
-    </>
+    <div>
+      <ul>
+        <span>
+          {title}
+          <span> by </span>
+          {author}
+        </span>
+        <span>
+          Category:
+          {category}
+        </span>
+        <button type="button" onClick={() => dispatch(removeBook(item_id))}>
+          Remove
+        </button>
+      </ul>
+    </div>
   );
 }
+Book.defaultProps = {
+  BOOK: {
+    title: '',
+    author: '',
+    item_id: '',
+    category: '',
+  },
+};
+
+Book.propTypes = {
+  BOOK: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+    item_id: PropTypes.string,
+    category: PropTypes.string.isRequired,
+  }),
+};
 
 export default Book;
-Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
-};
