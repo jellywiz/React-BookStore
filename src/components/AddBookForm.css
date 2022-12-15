@@ -1,0 +1,45 @@
+input {
+  border: solid 1px #e8e8e8;
+  background: white;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.addBookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 6rem 0 6rem;
+  padding-bottom: 3rem;
+}
+
+.addBookForm input {
+  width: 80%;
+}
+
+.categoryInput {
+  border: solid 1px #e8e8e8;
+  background: white;
+  padding: 10px;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.addBookForm h2 {
+  border-top: 1px solid #e8e8e8;
+  margin: 2em 0 1em;
+  padding-top: 1em;
+  color: rgb(87, 87, 87);
+}
+
+form button {
+  background-color: #4395fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+  width: 30%;
+}

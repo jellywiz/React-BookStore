@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className="Header">
-      <h1>Bookstore</h1>
+    <div className="header">
+      <h1>Bookstore CMS</h1>
       <ul>
         <li>
           <NavLink to="/" className="links">

@@ -1,0 +1,11 @@
+.checkStatusButton {
+  background-color: #4395fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+}

@@ -1,0 +1,119 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+.bookContainer {
+  display: flex;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
+  padding: 4rem 2.5rem;
+  justify-content: space-between;
+}
+
+.bookCategory {
+  padding: 0.5rem 0;
+  color: #e8e8e8;
+  opacity: 0.9;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.bookTitle {
+  padding: 0.5rem 0;
+  font-family: RobotoSlab;
+  font-size: 2.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #121212;
+}
+
+.bookAuthor {
+  padding: 0.5rem 0;
+  font-family: RobotoSlab;
+  font-size: 1.475rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.bottomLinks {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  color: #4386bf;
+  gap: 1rem;
+}
+
+.Line-2 {
+  height: 2.4rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
+}
+
+.Line-3 {
+  height: 60%;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
+}
+
+.bookRemoveButton {
+  border: none;
+  background: none;
+  color: #4386bf;
+  cursor: pointer;
+  font-family: RobotoSlab;
+  font-size: 1.475rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.completedness {
+  padding: 0 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  place-items: center;
+}
+
+.barinfo {
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+}
+
+.progress {
+  gap: 6px;
+}
+
+.updateProgressButton {
+  background-color: #4395fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+}

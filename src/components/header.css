@@ -1,0 +1,59 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+.header {
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 3rem 6rem;
+  background-color: #fff;
+}
+
+.header h1 {
+  font-family: Montserrat;
+  font-size: 2.875rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.header ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.header li {
+  list-style: none;
+  font-family: Montserrat;
+  font-size: 1.413rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.header a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.header .userOval {
+  display: flex;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.header .userAvatar {
+  height: 30px;
+  padding: 15px;
+}
