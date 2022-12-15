@@ -13,7 +13,7 @@ function BookList() {
   const books = useSelector((state) => state.books, shallowEqual);
 
   return (
-    <ul>
+    <ul className="bookList">
       {books.map((book) => (
         <li key={book.title}>
           <Book key={book.item_id} BOOK={book} />
