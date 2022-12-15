@@ -11,7 +11,6 @@ function AddFormBook() {
 
   function postBook(e) {
     e.preventDefault();
-
     dispatch(
       addBook({
         title,
@@ -26,31 +25,43 @@ function AddFormBook() {
     setCategories('');
   }
   return (
-    <form onSubmit={postBook}>
-      <h2>Add a book</h2>
-      <input
-        placeholder="Book Title"
-        type="text"
-        name="title"
-        value={title}
-        onInput={(e) => setTitle(e.target.value)}
-      />
-      <input
-        placeholder="Author Name"
-        type="text"
-        name="author"
-        value={author}
-        onInput={(e) => setAuthor(e.target.value)}
-      />
-      <input
-        placeholder="Category"
-        type="text"
-        name="category"
-        value={category}
-        onInput={(e) => setCategories(e.target.value)}
-      />
-      <button type="submit">Add Book</button>
-    </form>
+    <div className="addBookForm-container">
+      <h2>Add a Book</h2>
+      <form className="container-flex" onSubmit={postBook}>
+        <input
+          placeholder="Book Title"
+          type="text"
+          name="title"
+          value={title}
+          onInput={(e) => setTitle(e.target.value)}
+        />
+        <input
+          placeholder="Author Name"
+          type="text"
+          name="author"
+          value={author}
+          onInput={(e) => setAuthor(e.target.value)}
+        />
+        <select
+          className="categoryInput"
+          name="list"
+          onChange={(e) => {
+            setCategories(e.target.value);
+          }}
+          required
+        >
+          <option defaultValue="">Category</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Horror">Horror</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Romance">Romance</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Historical">Historical</option>
+        </select>
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
   );
 }
 
